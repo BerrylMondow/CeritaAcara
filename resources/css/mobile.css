@@ -1,0 +1,164 @@
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+        justify-content: left;
+        margin: 13px;
+    }
+
+    .nav-responsive {
+        display: flex;
+        gap: 20px;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .nav-image {
+        margin: 0 auto;
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 15px 0;
+        width: 100%;
+        margin: 0;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-content p {
+        width: 400px;
+        font-size: 12px;
+    }
+
+    .hero-btn {
+        padding: 14px 18px;
+        font-size: 12px;
+    }
+
+    .hero-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-images img {
+        max-width: 100%; /* Maksimum lebar gambar agar sesuai dengan lebar layar */
+        height: auto; /* Menjaga proporsi gambar */
+        margin: 10px; /* Jarak antar gambar */
+        position: relative; /* Tetapkan posisi relatif */
+    }
+
+    .hero-images img:nth-of-type(1) {
+        margin-right: 0; /* Hapus margin kanan pada gambar pertama */
+        margin-left: 0; /* Hapus margin kiri pada gambar pertama */
+        top: 70%;
+        left: 1%;
+        width: 20%;
+    }
+
+    .hero-images img:nth-of-type(2) {
+        margin-left: 0; /* Hapus margin kiri pada gambar kedua */
+        margin-top: 10px; /* Tambahkan jarak atas pada gambar kedua */
+        top: 70%;
+        left: -15%;
+        width: 20%;
+    }
+
+    .hero-images img:nth-of-type(3) {
+        margin-left: 0; /* Hapus margin kiri pada gambar ketiga */
+        margin-top: 10px; /* Tambahkan jarak atas pada gambar ketiga */
+        top: 70%;
+        left: -34%;
+        width: 20%;
+    }
+
+    .hero-images img:nth-of-type(4) {
+        margin-left: 0; /* Hapus margin kiri pada gambar keempat */
+        margin-top: 10px; /* Tambahkan jarak atas pada gambar keempat */
+        top: 70%;
+        right: 20%;
+        width: 20%;
+    }
+
+    .hero-images img:nth-of-type(5) {
+        margin-left: 0; /* Hapus margin kiri pada gambar kelima */
+        margin-top: 10px; /* Tambahkan jarak atas pada gambar kelima */
+        top: 70%;
+        right: 0%;
+        width: 20%;
+    }
+
+    .about {
+        padding: 50px 0; /* Mengurangi padding agar lebih proporsional */
+        margin-top: 0; /* Menghapus margin top yang besar */
+    }
+
+
+    .about-content {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        text-align: center; /* Pusatkan teks pada perangkat seluler */
+    }
+
+    .about-text {
+        margin-bottom: 30px; /* Jarak antara teks dan gambar */
+    }
+
+    section .about-content .btn {
+        font-family: 'Mulish';
+        font-size: 17px;
+      }
+
+    .about-content .about-text p {
+        font-size: 30px;
+    }
+    
+    .about-image {
+        margin-top: 30px; /* Jarak dari teks ke gambar */
+    }
+
+    .about-image1 {
+        margin-bottom: 20px; /* Jarak antara gambar ticket dan gambar utama */
+    }
+
+    .about-image .ticket-image {
+        width: 80px; /* Ukuran gambar tiket disesuaikan */
+        margin: 0 auto; /* Pusatkan gambar tiket */
+    }
+
+    .about-image2 {
+        margin-top: 20px; /* Jarak dari gambar utama ke gambar kedua */
+    }
+
+    .about-image img {
+        width: 100%; /* Pastikan gambar utama dan gambar kedua responsive */
+        height: auto;
+    }
+
+    .about-image1::before,
+    .about-image2::before {
+        display: none; /* Sembunyikan dekorasi border di gambar pada layar kecil */
+    }
+
+    .about-content .btn {
+        justify-content: center; /* Pusatkan tombol */
+    }
+}

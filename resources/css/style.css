@@ -5,6 +5,7 @@ body {
       top: 10px;
       font-family: sans-serif;
       padding: 0;
+      overflow-x: hidden;
     }
 
     .container {
@@ -26,6 +27,20 @@ body {
       top: 0;
     }
 
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+  }
+  
+  .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin: 4px 0;
+      transition: 0.4s;
+  }
+
     nav ul {
         display: flex;
         align-items: center;
@@ -46,8 +61,21 @@ body {
 
     .logo {
         display: flex;
+        flex: 1;
         align-items: center;
     }
+
+    .nav-image {
+      display: none;
+    }
+
+    .nav-image img {
+      display: block;
+      width: 136px;
+      height: auto;
+      margin: 0;
+      padding: 0;
+  }
 
     .logo img {
         width: 136px;
@@ -65,6 +93,31 @@ body {
         margin: 0 auto;
         margin-bottom: 55px;
         font-size: 15px;
+    }
+
+    .hero-start ul li {
+      list-style-type: none;
+    }
+
+    .hero-start ul li img {
+      width: 17px;
+    }
+
+    .hero-start {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-start ul {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 13px;
+      border-radius: 20px;
+      padding: 6px 16px;
+      max-width: fit-content;
+      background-color: #160E61;
+      font-family: 'Poppins';
     }
 
     .hero-content h1{
@@ -185,6 +238,7 @@ body {
       gap: 4px;
     }
 
+
     .services-image img {
       width: 400px;
     }
@@ -199,6 +253,23 @@ body {
 
     .services-text {
       width: 550px;
+    }
+
+    .service-favourite {
+      
+      display: flex;
+      overflow: hidden;
+      justify-content: end;
+    }
+
+    .service-favourite a {
+      background-color: #fff;
+      font-family: 'Mulish';
+      position: absolute;
+      font-size: 14px;
+      padding: 7px 8px;
+      border-radius: 50px;
+      color: #160E61;
     }
 
     .service-content-paragraph-1 {
@@ -225,10 +296,15 @@ body {
 
     .service-end-btn:hover {
       color: #483DC7;
+      transition: color 0.2s ease;
     }
 
     .gallery-frames {
+      position: relative;
       transform: rotate(-3deg);
+      overflow: visible; /* Ensure the content is not clipped */
+      right: 10%;
+      width: 125%;
     }
 
     .gallery-frame-1, .gallery-frame-2, .gallery-frame-3 {
@@ -403,4 +479,5 @@ body {
     margin-top: 13px;
     font-family: 'Mulish';
   }
+
 

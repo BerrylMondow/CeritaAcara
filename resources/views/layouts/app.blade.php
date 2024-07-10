@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ini judul</title>
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
@@ -11,6 +12,7 @@
     <link href='https://fonts.googleapis.com/css?family=Outfit' rel='stylesheet'>
     <link rel="stylesheet" href="{{Vite::asset('resources/css/style.css')}}">
     <link rel="stylesheet" href="{{Vite::asset('resources/css/app.css')}}">
+    <link rel="stylesheet" href="{{Vite::asset('resources/css/mobile.css')}}">
 </head>
 <header>
 @include('layouts.nav')

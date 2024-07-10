@@ -3,7 +3,15 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <img src="{{Vite::asset('resources/img/frame1.png')}}" width="400" class="hero-image" alt="">
+          <div class="hero-start">
+            <ul>
+              <li><a>Event Organizer</a></li>
+              <li><img src="{{ Vite::asset('resources/img/star.png')}}" alt=""></li>
+              <li><a>Ticketing System</a></li>
+              <li><img src="{{ Vite::asset('resources/img/star.png')}}" alt=""></li>
+              <li><a>Event Promotion</a></li>
+            </ul>
+          </div>
           <h1>Setiap Acara Punya Cerita</h1>
           <p>
             Cerita Acara hadir untuk membantu mewujudkan setiap detail rancangan
@@ -88,6 +96,9 @@
       </div>
       
       <div class="service">
+        <div class="service-favourite">
+          <a>Paling Dicari!</a>
+        </div>
           <div class="service-image">
               <img src="{{ Vite::asset('resources/img/service-icon-2.png') }}" alt="Ikon Sistem Ticketing" />
           </div>
@@ -394,7 +405,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     </script>
 
-   
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.querySelector('.hamburger');
+      const navMenu = document.querySelector('nav ul');
+
+      hamburger.addEventListener('click', function () {
+          navMenu.classList.toggle('active');
+      });
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.querySelector(".menu-icon");
+    const navLinks = document.querySelector("nav ul");
+
+    menuIcon.addEventListener("click", function() {
+        navLinks.classList.toggle("active");
+    });
+});
+</script>
 
 
   
